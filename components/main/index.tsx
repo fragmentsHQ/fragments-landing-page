@@ -5,7 +5,7 @@ import MainPageGraphic, {
 import React from "react";
 const Main = () => {
   return (
-    <div className="md:h-[86vh] h-full mt-[14vh] md:mt-[14vh] flex lg:flex-row flex-col max-w-[550px] mx-auto md:max-w-full  lg:items-center justify-between lg:space-x-6 space-x-0 w-full">
+    <div className="lg:h-[86vh] h-full mt-[14vh] md:mt-[14vh] flex lg:flex-row flex-col max-w-[550px] mx-auto md:max-w-full  lg:items-center justify-between lg:space-x-6 space-x-0 w-full">
       <div className="lg:w-[60%] md:w-[80%] mt-12 lg:py-0 py-32 w-full">
         <h1 className="lg:text-[66px] text-center md:text-left text-[52px] bg-text-gradient-gray text-transparent bg-clip-text leading-[65.52px] lg:leading-[81.72px] font-bold">
           Start building your Crypto Payment Infra
@@ -16,13 +16,13 @@ const Main = () => {
         </p>
 
         <div className="md:mt-16 mt-14 flex items-center md:flex-row flex-col justify-start  md:space-x-4">
-          <button className="border border-1 md:mt-0 mt-6 w-full justify-center font-bold leading-[22.68px] text-[17px] flex items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
+          <button className="border border-1 md:mt-0 mt-6 w-full justify-center font-semibold leading-[22.68px] text-[17px] flex items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
             <span>Read docs</span>
             <svg
               width={24}
               height={24}
               viewBox="0 0 24 24"
-              className="ml-2"
+              className="ml-3"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -42,7 +42,7 @@ const Main = () => {
               />
             </svg>
           </button>
-          <button className="bg-button-bg-gradient md:order-last order-first w-full  font-bold leading-[22.68px] text-[17px] flex items-center justify-center md:mx-0  max-w-[90%] mx-auto md:max-w-fit rounded-[12px] px-6 py-[14px]">
+          <button className="bg-button-bg-gradient md:order-last order-first w-full  font-semibold leading-[22.68px] text-[17px] flex items-center justify-center md:mx-0  max-w-[90%] mx-auto md:max-w-fit rounded-[12px] px-6 py-[14px]">
             <span className="bg-text-gradient text-transparent bg-clip-text">
               Schedule a demo
             </span>
@@ -50,7 +50,7 @@ const Main = () => {
               width={24}
               height={24}
               viewBox="0 0 24 24"
-              className="ml-2"
+              className="ml-3"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >

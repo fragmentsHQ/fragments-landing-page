@@ -8,7 +8,8 @@ const jakarta = Plus_Jakarta_Sans({
 });
 export const ibm_plex_mono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

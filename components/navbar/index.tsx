@@ -29,7 +29,7 @@ const Navbar = () => {
           <p
             className={cn(
               ibm_plex_mono.className,
-              "bg-text-gradient md:text-base text-sm font-medium leading-[20px] text-transparent md:mx-0 mx-auto md:w-[80%] lg:w-[50%]   md:text-right text-center w-[90%] lg:text-right bg-clip-text ml-4 "
+              "bg-text-gradient md:text-base text-sm font-extralight leading-[20px] text-transparent md:mx-0 mx-auto md:w-[80%] lg:w-[50%]   md:text-right text-center w-[90%] lg:text-right bg-clip-text ml-4 "
             )}
           >
             Cross-chain interoperability made easy with our automation
