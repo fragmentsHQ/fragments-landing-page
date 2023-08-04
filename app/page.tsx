@@ -1,4 +1,6 @@
 import AutoPay from "@/components/autopay";
+import FooterSection from "@/components/footer";
+import Friends from "@/components/friends";
 import Main from "@/components/main";
 import Navbar from "@/components/navbar";
 
@@ -13,6 +15,9 @@ export default function Home() {
       </div>
       <div className="h-[100px]"></div>
       <AutoPay />
+      <div className="h-[100px]"></div>
+      <Friends />
+      <FooterSection />
     </main>
   );
 }

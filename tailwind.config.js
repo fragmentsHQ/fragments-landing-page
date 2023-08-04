@@ -9,6 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        ibm: ["IBM Plex Mono"],
+      },
+      fontFamily: {
         jakarta: ["Plus Jakarta Sans"],
       },
       backgroundImage: {
@@ -24,6 +27,7 @@ module.exports = {
         "button-bg-gradient":
           "radial-gradient(103.63% 203.27% at 56.5% 37.9%, #FFFFFF 0%, #858585 100%)",
         autopay: "0px 0px 24px 0px #FFFFFF59",
+        wallpaper: "url('/images/wallpaper.webp')",
       },
     },
   },

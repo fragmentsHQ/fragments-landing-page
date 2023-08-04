@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="bg-white fixed top-0 py-4   md:py-0 md:h-[14vh]  rounded-b-[36px] w-full">
+    <div className="bg-white fixed z-50 top-0 py-4   md:py-0 md:h-[14vh]  rounded-b-[36px] w-full">
       <div className="container w-full px-6 flex items-center md:flex-row flex-col h-full space-y-2 pb-4 md:pb-0 md:space-y-0 justify-between">
         <div className="md:hidden w-full inline-flex justify-end  ">
           <svg
@@ -29,7 +29,7 @@ const Navbar = () => {
           <p
             className={cn(
               ibm_plex_mono.className,
-              "bg-text-gradient md:text-base text-sm font-extralight leading-[20px] text-transparent md:mx-0 mx-auto md:w-[80%] lg:w-[50%]   md:text-right text-center w-[90%] lg:text-right bg-clip-text ml-4 "
+              "bg-text-gradient md:text-base ibm text-sm font-extralight leading-[20px] text-transparent md:mx-0 mx-auto md:w-[80%] lg:w-[50%]   md:text-right text-center w-[90%] lg:text-right bg-clip-text ml-4 "
             )}
           >
             Cross-chain interoperability made easy with our automation
