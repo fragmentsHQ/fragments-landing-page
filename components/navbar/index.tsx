@@ -1,4 +1,3 @@
-import { ibm_plex_mono } from "@/app/layout";
 import { cn } from "@/lib/utils/cn";
 import React from "react";
 
@@ -28,7 +27,6 @@ const Navbar = () => {
         <div className="flex items-center justify-end md:flex-row flex-col space-y-6  md:space-y-0">
           <p
             className={cn(
-              ibm_plex_mono.className,
               "bg-text-gradient md:text-base ibm text-sm font-extralight leading-[20px] text-transparent md:mx-0 mx-auto md:w-[80%] lg:w-[50%]   md:text-right text-center w-[90%] lg:text-right bg-clip-text ml-4 "
             )}
           >

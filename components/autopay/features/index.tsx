@@ -3,7 +3,6 @@ import ConditionalTriggers from "./ConditionalTrigger";
 import CrossChainTokenPayments from "./CrosschainTokenPayments";
 import GasPayMethods from "./GasPayMethods";
 import MassPayouts from "./MassPayouts";
-import { ibm_plex_mono } from "@/app/layout";
 
 const features = [
   {
@@ -45,7 +44,6 @@ const Features = () => {
           </h1>
           <p
             className={cn(
-              ibm_plex_mono.className,
               "text-sm font-medium ibm leading-[19px] text-center text-black mt-4 mx-auto w-[90%]"
             )}
           >

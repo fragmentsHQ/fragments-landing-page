@@ -82,9 +82,9 @@ const Review: React.FC<ComponentProps<"div">> = ({ className }) => {
   return (
     <div className={cn("mb-10 lg:px-0 px-10", className)}>
       <p className="font-normal  text-base leading-[25.6px] text-black">
-        “Since integrating Autopay into our dApp, managing subscriptions and
-        payouts has become a breeze. Our users love the seamless experience, and
-        we couldn't be happier with the results”
+        &apos;Since integrating Autopay into our dApp, managing subscriptions
+        and payouts has become a breeze. Our users love the seamless experience,
+        and we couldn&apos;t be happier with the results&apos;
       </p>
       <div className="mt-3 relative z-20 font-extrabold text-[#626262] leading-[32.76px] text-[26px]">
         Arjun
