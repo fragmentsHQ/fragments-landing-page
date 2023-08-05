@@ -20,6 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500&display=swap"
+        rel="stylesheet"
+      />
       <body className={jakarta.className}>{children}</body>
     </html>
   );

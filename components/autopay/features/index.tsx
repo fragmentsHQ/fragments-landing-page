@@ -44,7 +44,7 @@ const Features = () => {
           </h1>
           <p
             className={cn(
-              "text-sm font-medium ibm leading-[19px] text-center text-black mt-4 mx-auto w-[90%]"
+              "text-sm font-normal   ibm leading-[19px] text-center text-black mt-4 mx-auto w-[90%]"
             )}
           >
             {feature.desc}
