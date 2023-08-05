@@ -13,7 +13,7 @@ export default function Home() {
       <div className="container mx-auto lg:px-4 md:px-10 px-4">
         <Main />
       </div>
-      <div className="h-[100px]"></div>
+      <div className="h-[100px]" />
       <div className="lg:px-4 md:px-10 px-4">
         <AutoPay />
       </div>

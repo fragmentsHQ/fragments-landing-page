@@ -1,5 +1,5 @@
 import React, { ComponentProps } from "react";
-import Wave from "../../public/images/waves.png";
+import Wave from "../../public/gif/friends.gif";
 import Wave_md from "../../public/images/waves_md.png";
 import Wave_mobile from "../../public/images/waves_mobile.png";
 import Image from "next/image";

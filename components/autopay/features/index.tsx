@@ -35,10 +35,7 @@ const Features = () => {
   return (
     <div className="space-y-10 mt-20 flex flex-col w-full h-full">
       {features.map((feature, index) => (
-        <div
-          key={index}
-          className="bg-[#EFEFEF] p-6 w-full h-[400px] rounded-xl"
-        >
+        <div key={index} className="bg-[#EFEFEF] p-6 w-full rounded-xl">
           <h1 className="font-bold text-[18px] leading-[22.68px] text-[#1867FD] text-center">
             {feature.title}
           </h1>
@@ -49,6 +46,7 @@ const Features = () => {
           >
             {feature.desc}
           </p>
+          {feature.component}
         </div>
       ))}
     </div>

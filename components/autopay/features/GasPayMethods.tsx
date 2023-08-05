@@ -1,7 +1,28 @@
-import React from "react";
+"use client";
+import { cn } from "@/lib/utils/cn";
+import React, { useState } from "react";
 
 const GasPayMethods = () => {
-  return <div></div>;
+  const [selectedValue, setSelectedValue] = useState("Time");
+
+  return (
+    <div className="bg-[#373A40] rounded-[16px] md:w-[100%] md:flex-row flex-col w-full lg:w-[70%] md:my-10 mt-8 p-[8px] mx-auto gap-[8px] flex items-center justify-between">
+      {["Forward Paying gas", "Pay from Gas Account"].map((item, index) => (
+        <button
+          key={index}
+          onClick={() => setSelectedValue(item)}
+          className={cn(
+            "md:w-[50%] bg-[#262229] w-full text-sm leading-[17.64px]  py-2.5 rounded-[12px]",
+            selectedValue === item
+              ? "bg-[#1867FD] text-white"
+              : "text-[#A0A0A0]"
+          )}
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+  );
 };
 
 export default GasPayMethods;
