@@ -10,11 +10,13 @@ export default function Home() {
       <div className="flex flex-col items-center h-full w-full">
         <Navbar />
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto lg:px-4 md:px-10 px-4">
         <Main />
       </div>
       <div className="h-[100px]"></div>
-      <AutoPay />
+      <div className="lg:px-4 md:px-10 px-4">
+        <AutoPay />
+      </div>
       <div className="h-[100px]"></div>
       <Friends />
       <FooterSection />

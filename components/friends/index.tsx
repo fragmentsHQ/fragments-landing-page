@@ -31,9 +31,12 @@ const Friends = () => {
   ];
   return (
     <div>
-      <h1 className="md:text-[50px] text-[30px] md:leading-[63px] leading-[37.8px] font-extrabold lg:text-center md:text-start text-start px-4 md:px-0">
-        Friends on the frontier is already in love with fragments
-      </h1>
+      <div className="lg:px-4 md:px-10 px-4">
+        <h1 className="md:text-[50px] container mx-auto  text-[30px] md:leading-[63px] leading-[37.8px] font-extrabold lg:text-center md:text-start text-start  md:px-0">
+          Friends on the frontier is already in love with fragments
+        </h1>
+      </div>
+
       <div className="bg-white w-full lg:h-[850px] md:h-[1000px]  mt-10 relative">
         <Image src={Wave} fill alt="wave" className="lg:block hidden" />
         <Image
@@ -58,7 +61,7 @@ const Friends = () => {
                 className="lg:hidden md:hidden block"
               />
             </div>
-            <div className="relative z-10 flex  lg:mt-0 md:mt-[200px]  md:flex-row flex-col md:space-y-0 lg:justify-start space-y-10 items-center w-full md:space-x-10 justify-center  md:justify-between">
+            <div className="relative z-10 flex lg:px-0 px-10  lg:mt-0 md:mt-[200px]  md:flex-row flex-col md:space-y-0 lg:justify-start space-y-10 items-center w-full md:space-x-6 justify-center  md:justify-between">
               {friends.map((item, index) => (
                 <div className={cn("relative", item.className)} key={index}>
                   <Image src={item.image} alt={item.name} fill />

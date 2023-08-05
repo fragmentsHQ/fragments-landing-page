@@ -1,13 +1,18 @@
+import { cn } from "@/lib/utils/cn";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FooterSection = () => {
   return (
-    <div className="w-full md:bg-wallpaper bg-cover relative md:py-20 py-10 px-4">
+    <div className="w-full md:bg-wallpaper bg-cover relative md:py-20 py-10 md:px-10 px-4">
       <Header />
       <div className="h-[60px]" />
       <Features />
-      <div className="h-[60px]" />
+      <div className="h-[100px]" />
       <Chat />
+      <div className="h-[120px]" />
+      <Links />
     </div>
   );
 };
@@ -27,19 +32,83 @@ const Header = () => {
 };
 
 const Features = () => {
+  const data = [
+    {
+      id: 1,
+      image: "/images/feature1.png",
+      imageClass: "w-[62px] h-[100px]",
+      desc: "Maintain gas balance or enable forward paying gas in any native token or ERC-20 stable coins",
+    },
+    {
+      id: 2,
+      image: "/images/feature2.png",
+      imageClass: "w-[219.97px] h-[55px]",
+      isMiddle: true,
+      desc: "Open source, Composable and Trustless infrastructure built by unifying 0x, Gelato and Connext Networks",
+    },
+    {
+      id: 3,
+      image: "/images/feature3.png",
+      imageClass: "w-[104px] h-[104px]",
+      desc: "Holistic overview on all your automated jobs along with their executions on your dashboard",
+    },
+    {
+      id: 4,
+      image: "/images/feature4.png",
+      imageClass: "w-[150px] h-[110px]",
+      desc: "Simplified treasury ops with cross-chain call execution and multicall batching for 1-many transactions",
+    },
+    {
+      id: 5,
+      image: "/images/feature5.png",
+      imageClass: "w-[102px] h-[102px]",
+      isMiddle: true,
+      desc: "Conditional(one-time) or recurring automation based on trigger values of time, token pair price or network’s gas price (tigger values can be expanded to any known data point)",
+    },
+    {
+      id: 6,
+      image: "/images/feature6.png",
+      imageClass: "w-[286px] h-[109px]",
+      desc: "Seamless automations on ERC-20s from an EOA, SAFE wallet or directly from your smart contracts",
+    },
+  ];
   return (
-    <div className="container w-full mx-auto flex flex-wrap items-center justify-center px-4 gap-4">
-      {Array(6)
-        .fill(0)
-        .map((_, i) => (
-          <Feature key={i} />
+    <div className="md:mt-[40px]">
+      <div className="container w-full mx-auto flex flex-wrap items-center justify-center px-4  gap-6">
+        {data.map((feature, i) => (
+          <Feature key={i} feature={feature} />
         ))}
+      </div>
     </div>
   );
 };
 
-const Feature = () => {
-  return <div className="h-[300px] w-[30%] min-w-[300px]  "></div>;
+const Feature = ({
+  feature,
+}: {
+  feature: {
+    id: number;
+    isMiddle?: boolean;
+    imageClass: string;
+    image: string;
+    desc: string;
+  };
+}) => {
+  return (
+    <div
+      className={cn(
+        "md:h-[300px]  w-[30%] min-w-[300px] flex mt-20 justify-center items-center flex-col",
+        !feature.isMiddle ? "md:mt-0" : "md:mt-20"
+      )}
+    >
+      <div className={cn("relative", feature.imageClass)}>
+        <Image src={feature.image} alt={feature.id.toString()} fill />
+      </div>
+      <p className="text-base leading-[20.16px] mt-16 w-[90%] md:w-[90%] lg:w-[75%] mx-auto font-medium text-center">
+        {feature.desc}
+      </p>
+    </div>
+  );
 };
 
 const Chat = () => {
@@ -146,3 +215,88 @@ const Chat = () => {
     </div>
   );
 };
+
+const Links = () => {
+  return (
+    <div className="flex items-center container lg:flex-row flex-col px-6 mx-auto justify-between w-full">
+      <div className="lg:w-[50%] w-full flex md:justify-end lg:justify-start justify-center h-full">
+        <div>
+          <p className="md:text-[22px]  text-sm text-left lg:text-left md:text-right leading-[27.72px] text-[#D3D3D3]">
+            COMING SOON
+          </p>
+          <div className="flex items-center justify-start space-x-10 md:mt-6 mt-4">
+            <div className="md:w-[200px] w-[137px] md:h-[40px] h-[30px] relative">
+              <Image src={"/images" + "/xstream.png"} fill alt={"xstream"} />
+            </div>
+            <div className="md:w-[150px] w-[106px] md:h-[40px] h-[30px] relative">
+              <Image src={"/images" + "/swapx.png"} fill alt={"xstream"} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-[50%] w-full flex items-center lg:mt-0 mt-20 md:flex-row flex-col justify-end">
+        <div>
+          <div className="flex items-center justify-center md:justify-end">
+            <Link
+              href={"/terms"}
+              className="leading-[15.6px] border mr-4 border-[#a5a4a4] border-t-0 border-l-0 border-r-0  underline bg-text-gradient-gray bg-clip-text text-transparent text-[12px] font-normal ibm"
+            >
+              terms of use
+            </Link>
+            <p className="bg-text-gradient-gray bg-clip-text text-transparent text-[12px] font-normal ibm">
+              © 2023 | fragments
+            </p>
+          </div>
+          <p className="bg-text-gradient-gray mt-2 text-end bg-clip-text text-transparent text-[12px] font-normal ibm">
+            © 2023 Fragments Inc. All rights reserved.
+          </p>
+        </div>
+        <div className="flex items-center justify-center md:justify-end space-x-4 md:mt-0 mt-10 md:ml-10">
+          {socialLinks.map((link, index) => (
+            <Link
+              href={link.link}
+              key={index}
+              target="_blank"
+              rel="noreferrer"
+              className="w-[30px] h-[30px] relative"
+            >
+              <Image
+                src={"/icons" + link.image}
+                fill
+                alt={link.name}
+                layout="fill"
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const socialLinks = [
+  {
+    name: "twitter",
+    link: "https://twitter.com/fragmentsorg",
+    image: "/twitter.svg",
+    image2: "/twitter_blue.svg",
+  },
+  {
+    name: "discord",
+    link: "https://t.me/fragmentsorg",
+    image: "/discord.svg",
+    image2: "/discord_blue.svg",
+  },
+  {
+    name: "github",
+    link: "",
+    image: "/github.svg",
+    image2: "/github_blue.svg",
+  },
+  {
+    name: "telegram",
+    link: "https://medium.com/fragmentsprotocol",
+    image: "/telegram.svg",
+    image2: "/telegram_blue.svg",
+  },
+];

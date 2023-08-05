@@ -26,6 +26,7 @@ module.exports = {
           "radial-gradient(166.4% 294.12% at 56.5% 37.9%, #FFFFFF 0%, #000000 100%)",
         "button-bg-gradient":
           "radial-gradient(103.63% 203.27% at 56.5% 37.9%, #FFFFFF 0%, #858585 100%)",
+
         autopay: "0px 0px 24px 0px #FFFFFF59",
         wallpaper: "url('/images/wallpaper.webp')",
       },

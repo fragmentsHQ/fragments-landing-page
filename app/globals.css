@@ -21,3 +21,6 @@ body {
 .ibm {
   font-family: "IBM Plex Mono", monospace;
 }
+link {
+  text-decoration: underline;
+}
