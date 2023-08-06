@@ -38,7 +38,7 @@ const Project = () => {
         unprecedented efficiency.
       </p>
       <div className="flex items-center  lg:w-[50%] w-full md:pl-16 md:min-w-[500px] space-x-4 lg:justify-end">
-        <button className="border border-1 border-black text-black md:mt-0  w-full justify-center font-semibold leading-[22.68px] text-[17px] flex items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
+        <button className="border border-1 border-black  md:flex hidden text-black md:mt-0  w-full justify-center font-semibold leading-[22.68px] text-[17px]  items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
           <span>Read docs</span>
           <Image src={ArrowBlack} alt="Read docs" width={25} height={25} />
         </button>
