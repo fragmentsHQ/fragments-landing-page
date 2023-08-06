@@ -1,7 +1,5 @@
-import MainPageGraphic, {
-  MainPageGraphic2,
-  MainPageGraphicMobile,
-} from "@/assets/MainPageGraphic";
+import MainPageGraphic, { MainPageGraphic2 } from "@/assets/MainPageGraphic";
+import Image from "next/image";
 import React from "react";
 const Main = () => {
   return (
@@ -139,8 +137,10 @@ const Main = () => {
         <div className="md:block lg:hidden hidden">
           <MainPageGraphic2 />
         </div>
-        <div className="md:hidden block lg:hidden ">
-          {/* <MainPageGraphicMobile /> */}
+        <div className="md:hidden block  lg:hidden w-full">
+          <div className="relative h-[260px] z-20  w-full">
+            <Image src={"/images/mobile_art.png"} fill alt="Mobile" />
+          </div>
         </div>
       </div>
     </div>
