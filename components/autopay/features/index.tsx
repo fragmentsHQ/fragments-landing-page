@@ -15,7 +15,7 @@ const features = [
     id: 1,
     title: "Gas Payment Flexibility",
     component: <GasPayMethods />,
-    desc: "Autopay understands the importance of flexibility when it comes to gas payments. With Autopay, you have the option to forward pay gas on transactions in your source token, eliminating the need for constant gas management. Alternatively, you can choose to maintain a gas balance within the system, ensuring smooth and uninterrupted transaction execution. The choice is yours.",
+    desc: "Autopay understands the importance of flexibility when it comes to paying gas on your scheduled transactions. With Autopay, you have the option to forward pay gas on transactions in your source token, eliminating the need for constant gas management. Alternatively, you can choose to maintain a gas balance within the system, ensuring smooth and uninterrupted transaction execution. The choice is yours.",
   },
   {
     id: 2,

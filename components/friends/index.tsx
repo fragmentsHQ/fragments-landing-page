@@ -33,7 +33,7 @@ const Friends = () => {
     <div>
       <div className="lg:px-4 md:px-10 px-4">
         <h1 className="md:text-[50px] container mx-auto  text-[30px] md:leading-[63px] leading-[37.8px] font-extrabold lg:text-center md:text-start text-start  md:px-0">
-          Friends on the frontier is already in love with fragments
+          Friends on the frontier are already in love with FRAGMENTS
         </h1>
       </div>
 

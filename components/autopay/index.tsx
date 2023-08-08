@@ -38,13 +38,20 @@ const Project = () => {
         unprecedented efficiency.
       </p>
       <div className="flex items-center  lg:w-[50%] w-full md:pl-16 md:min-w-[500px] space-x-4 lg:justify-end">
-        <button className="border border-1 border-black  md:flex hidden text-black md:mt-0  w-full justify-center font-semibold leading-[22.68px] text-[17px]  items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
-          <span>Read docs</span>
-          <Image src={ArrowBlack} alt="Read docs" width={25} height={25} />
-        </button>
-        <button className="bg-text-gradient  w-full border border-transparent font-semibold leading-[22.68px] text-[18px] flex items-center justify-center md:mx-0  max-w-[90%] mx-auto md:max-w-fit rounded-[12px] px-8 py-[14px]">
-          <span className="text-white bg-clip-text">Launch app</span>
-        </button>
+        <a
+          href="https://fragments.gitbook.io/intro/autopay/what-is-autopay"
+          target="_blank"
+        >
+          <button className="border border-1 border-black  md:flex hidden text-black md:mt-0  w-full justify-center font-semibold leading-[22.68px] text-[17px]  items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
+            <span>Read docs</span>
+            <Image src={ArrowBlack} alt="Read docs" width={25} height={25} />
+          </button>
+        </a>
+        <a href="https://app.fragments.money" target="_blank">
+          <button className="bg-text-gradient  w-full border border-transparent font-semibold leading-[22.68px] text-[18px] flex items-center justify-center md:mx-0  max-w-[90%] mx-auto md:max-w-fit rounded-[12px] px-8 py-[14px]">
+            <span className="text-white bg-clip-text">Launch app</span>
+          </button>
+        </a>
       </div>
     </div>
   );

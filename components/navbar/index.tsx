@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils/cn";
 import React from "react";
 import AutopayMenu from "../menu";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -26,9 +27,12 @@ const Navbar = () => {
           </AutopayMenu>
         </div>
 
-        <h1 className="md:text-[42px] text-[32px] font-bold bg-text-fluid-blue md:bg-text-gradient text-transparent uppercase leading-[52.92px] w-fit bg-clip-text">
-          Fragments
-        </h1>
+        <Link href={"/"}>
+          <h1 className="md:text-[42px] text-[32px] font-bold bg-text-fluid-blue md:bg-text-gradient text-transparent uppercase leading-[52.92px] w-fit bg-clip-text">
+            Fragments
+          </h1>
+        </Link>
+
         <div className="flex items-center justify-end md:flex-row flex-col space-y-6  md:space-y-0">
           <p
             className={cn(
