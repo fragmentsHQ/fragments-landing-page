@@ -287,7 +287,7 @@ export const socialLinks = [
   },
   {
     name: "discord",
-    link: "https://t.me/fragmentsorg",
+    link: "https://discord.gg/t9yfVT96",
     image: "/discord.svg",
     image2: "/discord_blue.svg",
   },

@@ -15,8 +15,12 @@ const Main = () => {
           chains.
         </p>
 
-        <div className="md:mt-16 mt-14 flex items-center md:flex-row flex-col justify-start  md:space-x-4">
-          <a href={"https://fragments.gitbook.io/intro/"} target="_blank">
+        <div className="md:mt-16 mt-14 flex items-center md:flex-row flex-col space-y-4 md:space-y-0 justify-start  md:space-x-4">
+          <a
+            href={"https://fragments.gitbook.io/intro/"}
+            target="_blank"
+            className="w-full md:w-auto"
+          >
             <button className="border border-1 md:mt-0 mt-6 w-full justify-center font-semibold leading-[22.68px] text-[17px] flex items-center max-w-[90%] mx-auto md:mx-0 md:max-w-fit rounded-[12px] px-6 py-[14px]">
               <span>Read docs</span>
               <svg
@@ -44,7 +48,11 @@ const Main = () => {
               </svg>
             </button>
           </a>
-          <a href="https://calendly.com/timbresociety" target="_blank">
+          <a
+            href="https://calendly.com/timbresociety"
+            target="_blank"
+            className="w-full md:w-auto"
+          >
             <button className="bg-button-bg-gradient md:order-last order-first w-full  font-semibold leading-[22.68px] text-[17px] flex items-center justify-center md:mx-0  max-w-[90%] mx-auto md:max-w-fit rounded-[12px] px-6 py-[14px]">
               <span className="bg-text-gradient text-transparent bg-clip-text">
                 Schedule a demo

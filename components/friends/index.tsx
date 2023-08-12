@@ -49,9 +49,13 @@ const Friends = () => {
         <div className="container mx-auto flex  items-center  flex-col lg:flex-row py-10 lg:px-10  justify-between h-full">
           <div className="lg:w-[50%]  w-full  relative z-10 h-full flex flex-col justify-between lg:justify-between md:justify-start">
             <div className="h-[70%] w-full lg:w-[100%] md:w-[70%]">
-              <Review />
-              <Review />
-              <Review className="md:block lg:hidden mb-0" />
+              <Review reviewer="Arjun" company="Connext" />
+              <Review reviewer="Fran" company="Superfluid" />
+              <Review
+                className="md:block lg:hidden mb-0"
+                reviewer="Srikar"
+                company="Coinshift"
+              />
             </div>
             <div className="w-full h-[600px] mt-[-100px] relative">
               <Image
@@ -71,7 +75,7 @@ const Friends = () => {
           </div>
 
           <div className="relative z-10 lg:flex items-end h-full hidden w-[50%]">
-            <Review className="mb-0 " />
+            <Review className="mb-0 " reviewer="Srikar" company="Coinshift" />
           </div>
         </div>
       </div>
@@ -81,7 +85,12 @@ const Friends = () => {
 
 export default Friends;
 
-const Review: React.FC<ComponentProps<"div">> = ({ className }) => {
+const Review: React.FC<
+  ComponentProps<"div"> & {
+    company: string;
+    reviewer: string;
+  }
+> = ({ className, reviewer, company }) => {
   return (
     <div className={cn("mb-10 lg:px-0 px-10", className)}>
       <p className="font-normal  text-base leading-[25.6px] text-black">
@@ -90,10 +99,10 @@ const Review: React.FC<ComponentProps<"div">> = ({ className }) => {
         and we couldn&apos;t be happier with the results&apos;
       </p>
       <div className="mt-3 relative z-20 font-extrabold text-[#626262] leading-[32.76px] text-[26px]">
-        Arjun
+        {reviewer}
       </div>
       <p className="mt-1 relative z-20 bg-text-gradient text-transparent bg-clip-text font-normal text-base leading-6">
-        Connext
+        {company}
       </p>
     </div>
   );
